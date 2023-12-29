@@ -5,7 +5,12 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/icons'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import project1 from "../../public/images/projects/weather.png"
+import project2 from "../../public/images/projects/todolist.png"
+import project6 from "../../public/images/projects/firstwebsite.png"
+import project3 from "../../public/images/projects/sankegame.png"
+import project4 from "../../public/images/projects/forecast.png"
+import project5 from "../../public/images/projects/keepnotes.png"
 import {motion} from "framer-motion"
 
 const FramerImage = motion(Image);
@@ -20,7 +25,7 @@ const FeaturedProject = ({type, title, summary, img , link, github}) => {
             xs:-right-2 xs:h-[102%] xs:w-full xs:rounded-[1.5rem]'/>
             <Link href={link} target='_blank'
                 className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
-                <FramerImage src={img} alt='title' className='w-full h-auto' 
+                <FramerImage src={img} alt={title} className='w-full h-auto' 
                     whileHover={{scale:1.05}}
                     transition={{duration:0.2}}
                     priority
@@ -41,7 +46,7 @@ const FeaturedProject = ({type, title, summary, img , link, github}) => {
                         <GithubIcon />
                     </Link>
                     <Link href={link} target='_blank' className='dark:bg-light dark:text-dark ml-4 rounded-lg bg-dark text-light 
-                    p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base'>
+                    p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base hover:dark:bg-blue-700 hover:bg-blue-800'>
                         Visit Project
                     </Link>
                 </div>
@@ -59,7 +64,7 @@ const Project = ({title, type, img, link, github}) => {
             md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'/>
             <Link href={link} target='_blank'
                 className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <FramerImage src={img} alt='title' className='w-full h-auto' 
+                <FramerImage src={img} alt={title} className='w-full h-auto' 
                     whileHover={{scale:1.05}}
                     transition={{duration:0.2}}
                     priority
@@ -77,7 +82,8 @@ const Project = ({title, type, img, link, github}) => {
                         {title}</h2>
                     </Link>
                 <div className='mt-2 flex items-center justify-between w-full'>
-                    <Link href={link} target='_blank' className='underline text-lg font-semibold  dark:text-light md:text-base'>
+                    <Link href={link} target='_blank' className='underline text-lg font-bold  dark:text-light md:text-base
+                    hover:dark:text-blue-600 hover:text-blue-800'>
                         Visit 
                     </Link>
 
@@ -103,26 +109,11 @@ const  projects =  () => {
                     <AnimatedText text="Imagination Trumps Knowledge!" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl '/>
 
                     <div className='grid grid-cols-12 gap-14 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                        <div className='col-span-12'>
+                        
+                    <div className='col-span-12'>
                             <FeaturedProject 
-                                title="Crypto Screener Application" link="/"  type="Feature Project" img={project1} github="/"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                local currency."
-                            />
-                        </div>
-
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project title="Crypto Screener Application" link="/"  type="Feature Project" img={project1} github="/"/>
-                        </div>
-
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project title="Crypto Screener Application" link="/"  type="Feature Project" img={project1} github="/"/>
-                        </div>
-
-                        <div className='col-span-12'>
-                            <FeaturedProject 
-                                    title="Crypto Screener Application" link="/"  type="Feature Project" img={project1} github="/"
+                                    title="TODO List Application" link="https://todolist-h4rq.onrender.com/"  type="Feature Project" img={project2} 
+                                    github="https://github.com/Abhijeet1326/TODO-List"
                                     summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                                     It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                                     local currency."
@@ -130,11 +121,33 @@ const  projects =  () => {
                         </div>
 
                         <div className='col-span-6 sm:col-span-12'>
-                            <Project title="Crypto Screener Application" link="/"  type="Feature Project" img={project1} github="/"/>
+                            <Project title="Snake Game" link="https://drive.google.com/file/d/1GRXTba18DpSwzPsWQV94oVnAOoa5QWf-/view?usp=sharing"  type="Project" img={project3} 
+                            github="https://github.com/Abhijeet1326/Snake_Game"/>
                         </div>
 
                         <div className='col-span-6 sm:col-span-12'>
-                            <Project title="Crypto Screener Application" link="/"  type="Feature Project" img={project1} github="/"/>
+                            <Project title="Weather Forecast" link="https://github.com/Abhijeet1326/Weather-Forecast.git"  type="Feature Project" img={project4} 
+                            github="https://github.com/Abhijeet1326/Weather-Forecast.git"/>
+                        </div>
+
+                        <div className='col-span-12'>
+                            <FeaturedProject 
+                                title="Make Notes" link="https://github.com/Abhijeet1326/Keep-Notes-Clone"  type="Feature Project" 
+                                img={project5} github="https://github.com/Abhijeet1326/Keep-Notes-Clone"
+                                summary="Notes making app using react. Inspired from Google's Keep Notes app."
+                            />
+                        </div>
+
+                        
+
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project title="Weather App" link="https://weatherapp-lctn.onrender.com/"  
+                            type="Feature Project" img={project1} github="/"/>
+                        </div>
+
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project title="First WebSite" link="https://abhijeet1326.github.io/portfolio-website-1/"  
+                            type="First Project" img={project6} github="https://github.com/Abhijeet1326/portfolio-website-1"/>
                         </div>
                     </div>
                 </Layout>

@@ -45,22 +45,22 @@ const Experience = () => {
         />
 
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
-                <Details position="Software Engineer" company="Google" time="2022-Present" address="Mountain View, CA"
-                    work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."
+                <Details position="Intern" company="Jet Kings" time="2022-2022" address="Modern College, Vashi"
+                    work="Responsible for uploading student data on the Company's Official Website.
+                    My attention to detail ensured accuracy, and my efficient work ethic allowed me to meet deadlines consistently, 
+                    contributing to streamlined data operations."
                 />
 
-                <Details position="Intern" company="Facebook" time="Summer 2021" address="Menlo Park, CA."
-                    work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and 
-                    share short-form video content, including designing and implementing a new user interface and developing 
-                    the backend infrastructure to support the feature."
+                <Details position="Intern" company="Hamari Pahchan NGO" time="Winter 2022" address="Remote"
+                    work="Engaged in impactful NGO work, I spearheaded donation drives, crafted compelling posters using Canva, 
+                    and employed creative writing to convey the organization's mission effectively. Contributed to successful campaigns, 
+                    fostering community involvement."
                 />
 
-                <Details position="Software Engineer" company="Amazon" time="Summer 2019" address="Redmond, WA."
-                    work="Worked on a team responsible for developing new features for Microsoft's Windows operating system, 
-                    including implementing a new user interface for a system settings panel and optimizing the performance of 
-                    a core system component."
+                <Details position="Cashier" company="NovaAce" time="2023-04 | 2023-08" address="Xperia Mall, Dombivli"
+                    work="Managed financial transactions with precision, ensuring accurate cash handling and customer satisfaction.
+                    Developed strong interpersonal skills through daily customer interactions, enhancing communication abilities. 
+                    Demonstrated reliability and accountability in a fast-paced environment, fostering a disciplined work ethic."
                 />
             </ul>
         </div>

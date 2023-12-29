@@ -45,19 +45,19 @@ const Education = () => {
         />
 
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
-                <Details type="Bachelor Of Science In Computer Science" time="2021-2024" address="KBP College, Vashi" 
+                <Details type="Bachelor Of Science In Computer Science" time="2021-2024" address="KBP College, Vashi | CGPA: 9.1" 
                 info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
                 Intelligence."
                 />
 
-                <Details type="HSC (Science)" time="2019-2021" address="Holy Angel's Jr College, Dombivli" 
+                <Details type="HSC (Science)" time="2019-2021" address="Holy Angel's Jr College, Dombivli | Percentage: 89.83" 
                 info="Completed my Higher Secondary Certificate in science stream with subjects such as chemistry, physics, 
                 mathematics and Information Technology"
                 />
 
-                <Details type="Online Coursework" time="2021-2024" address="Udemy" 
-                info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine 
-                Learning Engineering."
+                <Details type="Complete Web Development BootCamp" time="2022-2023" address="Udemy" 
+                info="Completed coursework in advanced topics such as RHTML, CSS, Javascript, Node, 
+                React, PostgreSQL, Web3 and DApps"
                 />
             </ul>
         </div>

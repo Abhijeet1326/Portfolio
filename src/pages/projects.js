@@ -114,9 +114,9 @@ const  projects =  () => {
                             <FeaturedProject 
                                     title="TODO List Application" link="https://todolist-h4rq.onrender.com/"  type="Feature Project" img={project2} 
                                     github="https://github.com/Abhijeet1326/TODO-List"
-                                    summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                    local currency."
+                                    summary="A streamlined task management application, hosted on render.com, facilitating efficient 
+                                    organization and execution of user-defined to-do lists. Utilized technologies include body-parser,
+                                     Express.js, EJS, and MongoDB for seamless development and data management."
                             />
                         </div>
 
@@ -134,7 +134,9 @@ const  projects =  () => {
                             <FeaturedProject 
                                 title="Make Notes" link="https://github.com/Abhijeet1326/Keep-Notes-Clone"  type="Feature Project" 
                                 img={project5} github="https://github.com/Abhijeet1326/Keep-Notes-Clone"
-                                summary="Notes making app using react. Inspired from Google's Keep Notes app."
+                                summary="Developed applications inspired by Google Keep Notes, featuring similar note-taking functionality 
+                                and organizational features. Utilized React in conjunction with Material-UI Icons for the 
+                                development of the project."
                             />
                         </div>
 

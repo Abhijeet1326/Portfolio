@@ -47,7 +47,7 @@ const About = () => {
                     <div className='col-span-3 flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                         <h2 className='mb-4 text-left font-bold uppercase text-dark/75 dark:text-light'>Biography</h2>
                         <p className='font-medium'>
-                        As a budding web developer, Abhijeet Rajput possesses a keen passion for transforming digital landscapes through 
+                        As a budding web developer, I possesses a keen passion for transforming digital landscapes through 
                         innovative and user-centric web solutions. Armed with a solid foundation in programming languages such as 
                         HTML, CSS, and JavaScript, has successfully completed academic projects showcasing a 
                         knack for crafting visually appealing and functional websites.
